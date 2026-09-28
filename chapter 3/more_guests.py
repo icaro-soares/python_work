@@ -1,0 +1,11 @@
+guests = ['barack obama', 'nelson mandela', 'juscelino kubistcheck']
+print("To all guests: we've found a bigger table, more guest will come to our dinner")
+guests.insert(0, 'george bush')
+guests.insert(2, 'viola davis')
+guests.append('kamala harris')
+print(f"You're invited {guests[0].title()}")
+print(f"You're invited {guests[1].title()}")
+print(f"You're invited {guests[2].title()}")
+print(f"You're invited {guests[3].title()}")
+print(f"You're invited {guests[4].title()}")
+print(f"You're invited {guests[5].title()}")
