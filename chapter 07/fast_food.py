@@ -1,6 +1,7 @@
-sandwich_orders = ["americano", "x-tudo", "vegano"]
+sandwich_orders = ["americano", "misto", "x-egg", "x-bacon", "vegetariano"]
 finished_sandwiches = []
-for sandwich in sandwich_orders:
-    new_sandwich = sandwich_orders.pop()
-    finished_sandwiches.append(new_sandwich)
-    print(f"Your {new_sandwich.title()} sandwich is ready.")
+while sandwich_orders:
+    for sandwich in sandwich_orders:
+        sandwich = sandwich_orders.pop()
+        finished_sandwiches.append(sandwich)
+        print(f"Seu sanduíche {sandwich.title()} está pronto.")
