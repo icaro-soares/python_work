@@ -1,0 +1,15 @@
+sandwich_orders = ["misto", "pastrami","americano", "pastrami", "x-egg", "x-bacon", "pastrami"]
+finished_orders = []
+
+print("We ran off Pastrami sandwich")
+while 'pastrami' in sandwich_orders:
+        sandwich_orders.remove('pastrami')
+
+while sandwich_orders:
+    completed_sandwich = sandwich_orders.pop()
+    print(f"Your order {completed_sandwich} is ready!")
+    finished_orders.append(completed_sandwich)
+    
+print("\nOrders:")
+for i, s in enumerate(sorted(finished_orders)):
+    print(f"{i:<3}{s:>20}")
