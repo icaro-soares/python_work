@@ -1,3 +1,6 @@
+"""Conjunto de classe que representam carros a gasolina e elétricos"""
+
+
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -50,19 +53,3 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
         self.battery = Battery()
-
-
-my_leaf = ElectricCar("nissan", "leaf", 2024)
-my_leaf.describe_car()
-my_leaf.read_hodometer()
-my_leaf.increment_hodometer(200)
-my_leaf.read_hodometer()
-my_leaf.update_hodometer(100)
-my_leaf.read_hodometer()
-my_leaf.increment_hodometer(300)
-my_leaf.read_hodometer()
-my_leaf.battery.show_battery()
-my_leaf.battery.get_range()
-my_leaf.battery.upgrade_battery()
-my_leaf.battery.show_battery()
-my_leaf.battery.get_range()
