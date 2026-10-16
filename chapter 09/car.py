@@ -14,11 +14,15 @@ class Car:
         print(f"This car has {self.hodometer} miles on it.")
 
 
-    def increment_hodometer(self, value):
+    def update_hodometer(self, value):
         if value >= self.hodometer:
             self.hodometer += value
         else:
             print("You can't roll back an hodometer!")
+
+
+    def increment_hodometer(self, value):
+        self.hodometer += value
         
 
 class Battery:
@@ -52,6 +56,8 @@ my_leaf = ElectricCar("nissan", "leaf", 2024)
 my_leaf.describe_car()
 my_leaf.read_hodometer()
 my_leaf.increment_hodometer(200)
+my_leaf.read_hodometer()
+my_leaf.update_hodometer(100)
 my_leaf.read_hodometer()
 my_leaf.increment_hodometer(300)
 my_leaf.read_hodometer()
