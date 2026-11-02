@@ -1,0 +1,3 @@
+No Python podemos ler arquivos
+No Python podemos executar programas
+No Python podemos automatizar tarefas
